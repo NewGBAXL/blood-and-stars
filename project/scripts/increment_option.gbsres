@@ -1,0 +1,56 @@
+{
+  "_resourceType": "script",
+  "id": "e99f28b5-81a4-4773-abae-ee72de5ffb6a",
+  "name": "Increment Option",
+  "description": "Increment value to max-1 wrapped at zero",
+  "variables": {
+    "V0": {
+      "id": "V0",
+      "name": "Index",
+      "passByReference": true
+    },
+    "V1": {
+      "id": "V1",
+      "name": "Count",
+      "passByReference": true
+    }
+  },
+  "actors": {},
+  "symbol": "script_1",
+  "script": [
+    {
+      "command": "EVENT_IF",
+      "args": {
+        "condition": {
+          "type": "expression",
+          "value": "$V0$ < $V1$ - 1"
+        },
+        "__collapseElse": true
+      },
+      "children": {
+        "true": [
+          {
+            "command": "EVENT_SET_VALUE",
+            "args": {
+              "variable": "V0",
+              "value": {
+                "type": "number",
+                "value": 0
+              }
+            },
+            "id": "b7aa2515-738a-46e7-adc6-d676e06d1bbe"
+          }
+        ],
+        "false": []
+      },
+      "id": "8c523833-01c8-46b4-a931-679b56dfa1b2"
+    },
+    {
+      "command": "EVENT_INC_VALUE",
+      "args": {
+        "variable": "V0"
+      },
+      "id": "e62ff432-7ffd-4b32-8493-08ebf092df3c"
+    }
+  ]
+}

@@ -1,0 +1,57 @@
+{
+  "_resourceType": "script",
+  "id": "db6e66ce-6991-425e-81a4-bfe648889825",
+  "name": "Decrement Option",
+  "description": "Decrement value to zero wrapped at max-1",
+  "variables": {
+    "V0": {
+      "id": "V0",
+      "name": "Index",
+      "passByReference": true
+    },
+    "V1": {
+      "id": "V1",
+      "name": "Count",
+      "passByReference": true
+    }
+  },
+  "actors": {},
+  "symbol": "script_2",
+  "script": [
+    {
+      "command": "EVENT_IF",
+      "args": {
+        "condition": {
+          "type": "expression",
+          "value": "$V0$ > 0"
+        },
+        "__collapseElse": false
+      },
+      "children": {
+        "true": [
+          {
+            "command": "EVENT_DEC_VALUE",
+            "args": {
+              "variable": "V0"
+            },
+            "id": "27e89dad-2d6f-407b-9c6e-c6bf80a5b891"
+          }
+        ],
+        "false": [
+          {
+            "command": "EVENT_SET_VALUE",
+            "args": {
+              "variable": "V0",
+              "value": {
+                "type": "expression",
+                "value": "$V1$ - 1"
+              }
+            },
+            "id": "cc0b2fbb-f323-49c5-a448-76efebebf30c"
+          }
+        ]
+      },
+      "id": "8c155540-ad23-4e99-93e0-c2b4ca4c01cc"
+    }
+  ]
+}

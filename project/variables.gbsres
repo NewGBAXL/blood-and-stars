@@ -1,4 +1,25 @@
 {
   "_resourceType": "variables",
-  "variables": []
+  "variables": [
+    {
+      "id": "0",
+      "name": "MenuIndex",
+      "symbol": "var_menuindex"
+    },
+    {
+      "id": "bf293c91-82a5-42b0-9fdd-f112b0d06e02__L0",
+      "name": "IsTopMenu",
+      "symbol": "var_istopmenu"
+    },
+    {
+      "id": "bf293c91-82a5-42b0-9fdd-f112b0d06e02__L1",
+      "name": "SubMenuIndex",
+      "symbol": "var_submenuindex"
+    },
+    {
+      "id": "bf293c91-82a5-42b0-9fdd-f112b0d06e02__L2",
+      "name": "SubMenuIndexMax",
+      "symbol": "var_submenuindexmax"
+    }
+  ]
 }

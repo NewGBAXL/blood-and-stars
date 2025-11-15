@@ -1,12 +1,13 @@
 {
   "_resourceType": "settings",
-  "worldScrollX": 0,
-  "worldScrollY": 0,
-  "zoom": 100,
+  "worldScrollX": 479.20001220703125,
+  "worldScrollY": 125.5999984741211,
+  "zoom": 172.58059997297823,
   "navigatorSplitSizes": [
-    443,
-    135,
-    135
+    469,
+    30,
+    205,
+    30
   ],
   "showNavigator": true,
   "showCollisions": true,
@@ -14,10 +15,11 @@
   "previewAsMono": false,
   "showCollisionSlopeTiles": false,
   "favoriteEvents": [
-    "EVENT_TEXT",
-    "EVENT_SWITCH_SCENE"
+    "EVENT_IF::EVENT_IF_EXPRESSION",
+    "EVENT_SET_VALUE",
+    "EVENT_CALL_CUSTOM_EVENT"
   ],
-  "debuggerEnabled": false,
+  "debuggerEnabled": true,
   "debuggerScriptType": "editor",
   "debuggerVariablesFilter": "all",
   "debuggerCollapsedPanes": [],
